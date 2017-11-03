@@ -44,6 +44,12 @@ config phase1.openstack.password
 	help
 	  The OpenStack Keystone password used for authentication.
 
+config phase1.openstack.create_network
+	string "Create network (true/false)"
+	default "false"
+	help
+	If false, the network associated with the default gateway is used. If true, the user is expected to create a network themselves.
+
 config phase1.openstack.network_name
 	string "Name of internal Neutron network"
 	help
